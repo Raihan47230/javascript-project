@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+     <main class="flex justify-center mt-10">
+          <div class="mockup-phone border-primary">
+               <div class="camera"></div>
+               <div class="display">
+                 <div class="artboard artboard-demo phone-1">
+                    <!--Acount balance -->
+                    <div class="stats shadow">
+                         <div class="stat">
+                           <div class="stat-title">Acount balance</div>
+                           <div id="total_amount" class="stat-value">9400</div>
+                         </div>
+                       </div>
+                         <!--Acount balance end -->
+                         <div class="divider"></div>
+                         <div class="flex gap-3">
+                          <button id="add_money" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">add manoy</button>
+                         <button id="cush_out" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">caush out</button>
+                         </div>
+                         <div class="divider"></div>
+                         <!-- add manoy  -->
+                         <div id="showAddMoney" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                              <form class="card-body">
+                               
+                                <div class="form-control">
+                                  <label class="label">
+                                    <span class="label-text">Amount</span>
+                                  </label>
+                                  <input id="input-1" type="text"   placeholder="add money Acount" class="input input-bordered"  />
+                                </div>
+                               
+                                <div class="form-control">
+                                  <label class="label">
+                                    <span class="label-text">Pin</span>
+                                  </label>
+                                  <input id="input-2" type="password"  placeholder="Enter your pin number" class="input input-bordered"  />
+                                  
+                                </div>
+                                <div class="form-control mt-6">
+                                  <button id="add_manoy_from" class="btn btn-primary">Add Manoy</button>
+                                </div>
+                              </form>
+                            </div>
+                         <!-- add manoy  -->
+
+
+                         
+                            <!-- cush out -->
+                            <div id="showCushOut" class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                              <form class="card-body">
+                               
+                                <div class="form-control">
+                                  <label class="label">
+                                    <span class="label-text">Amount</span>
+                                  </label>
+                                  <input id="input-cushOut-1" type="text"   placeholder="add money Acount" class="input input-bordered"  />
+                                </div>
+                               
+                                <div class="form-control">
+                                  <label class="label">
+                                    <span class="label-text">Pin</span>
+                                  </label>
+                                  <input id="input-cushOut-2" type="password"  placeholder="Enter your pin number" class="input input-bordered"  />
+                                  
+                                </div>
+                                <div class="form-control mt-6">
+                                  <button id="cushOut_from" class="btn btn-primary">Cush Out</button>
+                                </div>
+                              </form>
+                            </div>
+                        <!-- cush out -->
+
+                 </div>
+               </div>
+             </div>
+     </main>
+     <script src="addMoney.js"></script>
+     <script src="utilites.js"></script>
+     <script src="cushOut.js"></script>
+     <script src="features.js"></script>
+
+</body>
+</html>
